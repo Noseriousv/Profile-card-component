@@ -1,0 +1,122 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; 
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+:root {
+    --Darkcyan: hsl(185, 75%, 39%);
+    --Verydarkblue: hsl(229, 23%, 23%);
+    --Darkgrayishblue: hsl(227, 10%, 46%);
+    --Darkgray: hsl(0, 0%, 59%);
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(./images/bg-pattern-top.svg), url(./images/bg-pattern-bottom.svg); 
+    background-color: var(--Darkcyan);
+    background-repeat: no-repeat, no-repeat;
+    background-position: right 51vw bottom 42vh, left 55vw top 42vh;
+    
+
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 350px;
+    max-height: 420px;
+    position: relative;
+    border-radius:20px;
+    box-shadow: 1px 1px 30px var(--Darkgrayishblue);
+   
+}
+
+.bg-pattern-card {
+    
+    max-width: 100%;
+    border-radius: 20px 20px 0 0;
+    position: relative; 
+    
+}
+
+.name-add-img-card {
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+    background-color: #fff;
+    
+}
+
+.img-victor {
+    border: 5px solid #fff;
+    border-radius: 50px;
+    position: absolute;
+    top: 90px;
+    
+}
+
+.name { 
+    padding: 70px 0px 5px 0;
+    font-size: 1.125rem;
+}
+
+#age {
+    padding-left: 10px;
+    font-weight: 400;
+    color: var(--Darkgray);
+    
+}
+
+.address {
+    padding-bottom: 20px;
+    font-size: 0.9rem;
+    color: var(--Darkgray);
+}
+
+.followers-likes-photos-card {
+    border-top: 1px  solid hsl(0, 0%, 85%);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 200px;
+    background-color: #fff;
+    border-radius: 0 0 20px 20px;
+}
+
+.followers, .likes, .photos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.followers h3, .likes h3, .photos h3 {
+    font-size: 1.125rem;
+
+}
+
+.followers p, .likes p, .photos p {
+    font-size: 0.6rem;
+    padding-top: 5px;
+    color: var(--Darkgray);
+}
+
+@media screen and (max-width: 375px){
+    main {
+        max-width: 300px;
+        max-height: 400px;
+    }
+}
